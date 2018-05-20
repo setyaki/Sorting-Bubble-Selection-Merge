@@ -13,9 +13,9 @@ int main () {
 		for (int k=0;k<6;k++){
 			
 			if (A[k]>A[k+1]){
-				cout<<A[k];
+				cout<<"("<<A[k]<<",";
 				swap (A[k], A[k+1]);
-				cout<<A[k]<<" ";
+				cout<<A[k]<<") ";
 			}
 		}
 	}
