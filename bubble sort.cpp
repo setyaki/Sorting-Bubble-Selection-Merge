@@ -19,9 +19,13 @@ int main () {
 			}
 		}
 	}
-	cout<<endl<<"Sorting Result :";
+	cout<<endl<<"Ascending Sorting Result :";
 	for (int l=0;l<7;l++){
 		cout<<A[l]<<" ";
+	}
+	cout<<endl<<"Descending Sorting Result :";
+	for (int p=6;p>=0;p--){
+		cout<<A[p]<<" ";
 	}
 	
 }
