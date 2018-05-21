@@ -1,31 +1,52 @@
 #include <iostream>
 using namespace std;
+
+void display (int A[], int n) ;
+
 int main () {
-	
-	int A[7]={3,4,1,5,6,8,2};
-	cout<<"Data Input :";
-	for (int i=0;i<7;i++){
-		cout<<A[i]<<" ";
-	}
-	cout<<endl;
-	cout<<" Swapping :";
-	for (int j=0; j<7; j++){
-		for (int k=0; k<6; k++){
+
+	int n;
+
+	cout<<"Input n data : ";
+	cin>>n;
+	int A[n];
+
+	for (int h=0;h<n;h++){
+	    cout<<"input data ["<<h+1<<"] :";
+	    cin>>A[h];
+	    }
+	cout<<endl<<"Data Input :";
+
+	display(A,n);
+	cout<<endl<<endl;
+
+	cout<<"Swapping :";
+	for (int j=0;j<n;j++){
+		for (int k=0;k<n-1;k++){
 			
-			if (A[k] > A[k+1]){
-				cout<<"("<<A[k]<<",";
+			if (A[k]>A[k+1]){
+			
+				cout<<"\n("<<A[k]<<","<<A[k+1]<<") ";
+				display(A,n);
 				swap (A[k], A[k+1]);
-				cout<<A[k]<<") ";
-			}
+				
+			} 
 		}
 	}
-	cout<<endl<<" Ascending Sorting Result :";
-	for (int l=0; l<7; l++){
-		cout<<A[l]<<" ";
-	}
-	cout<<endl<<" Descending Sorting Result :";
-	for (int p=6; p>=0; p--){
-		cout<<A[p]<<" ";
+	
+	cout<<endl<<endl<<"Ascending Sorting Result :";
+		display(A,n);
+		
+	cout<<endl<<endl<<"Descending Sorting Result :";
+		for (int p=n-1;p>=0;p--){
+			cout<<A[p]<<" ";
+		}
+	
+}
+void display (int A[], int n) {
+	
+		for (int i=0;i<n;i++){
+		cout<<A[i]<<" ";
 	}
 	
 }
