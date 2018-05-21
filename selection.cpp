@@ -8,7 +8,7 @@ int n,i,j,temp,nilai;
 cout<<"masukkan berapa banyak nilai yang ingin diurutkan : "; cin>>n; cout<<endl;
 
 for(i=0; i<n; i++){
-    cout<<"nilai data ke-"<<i<<" : ";cin>>a[i];
+    cout<<"nilai data ke-"<<i+1<<" : ";cin>>a[i];
 }
 
 cout<<"data yang diinputkan : ";
